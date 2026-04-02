@@ -20,6 +20,7 @@ import AProposPage from './components/AProposPage'
 import ContactPage from './components/ContactPage'
 import DevisPage from './components/DevisPage'
 import WhatsAppButton from './components/WhatsAppButton'
+import VideoSection from './components/VideoSection'
 
 function HomePage() {
   return (
@@ -28,6 +29,7 @@ function HomePage() {
       <Hero />
       <Features />
       <Categories />
+      <VideoSection />
       <WhyUs />
       <QuoteSection />
       <Footer />
