@@ -1,13 +1,63 @@
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-image: url('/images/hero-bg.jpg');
+}
+
+/* Slides */
+.hero-slide {
+  position: absolute;
+  inset: 0;
   background-size: cover;
-  background-position: center top;
+  background-position: center;
   background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+  z-index: 0;
+}
+
+
+.hero-slide.active {
+  opacity: 1;
+}
+
+/* Desktop : masquer les slides mobile */
+@media (min-width: 769px) {
+  .hero-slide--mobile { display: none; }
+}
+
+/* Mobile : masquer le slide desktop */
+@media (max-width: 768px) {
+  .hero-slide--desktop { display: none; }
+}
+
+/* Dots */
+.hero-dots {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 3;
+}
+
+.hero-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.6);
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.hero-dot.active {
+  background: var(--accent);
+  border-color: var(--accent);
 }
 
 .hero::before {
@@ -20,6 +70,7 @@
       rgba(5, 5, 5, 0.82) 50%,
       rgba(15, 8, 0, 0.65) 100%
     );
+  z-index: 1;
 }
 
 .hero-overlay {
@@ -29,12 +80,12 @@
   right: 0;
   height: 140px;
   background: linear-gradient(to bottom, transparent, var(--bg-dark));
-  z-index: 1;
+  z-index: 2;
 }
 
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   max-width: 1200px;
   margin: 0 auto;
   padding: 160px 24px 100px;
