@@ -90,8 +90,12 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+  }
+
   .hero-content {
-    padding: 130px 24px 80px;
+    padding: 110px 24px 60px;
     text-align: center;
   }
 }
