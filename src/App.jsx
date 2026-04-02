@@ -19,6 +19,7 @@ import ProduitsPage from './components/ProduitsPage'
 import AProposPage from './components/AProposPage'
 import ContactPage from './components/ContactPage'
 import DevisPage from './components/DevisPage'
+import NotFoundPage from './components/NotFoundPage'
 import WhatsAppButton from './components/WhatsAppButton'
 import VideoSection from './components/VideoSection'
 
@@ -50,6 +51,7 @@ function App() {
         <Route path="/devis" element={<DevisPage />} />
         <Route path="/produits/:category" element={<CategoryPage />} />
         <Route path="/produits/:category/:productId" element={<ProductDetail />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   )

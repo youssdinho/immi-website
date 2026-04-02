@@ -179,6 +179,17 @@
   transform: translateY(-1px);
 }
 
+.contact-error {
+  margin-top: 12px;
+  color: #c0392b;
+  background: #fdecea;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 14px;
+  text-align: center;
+}
+
 /* Success */
 .contact-success {
   text-align: center;

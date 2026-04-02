@@ -1,9 +1,13 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import emailjs from '@emailjs/browser'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from 'react-icons/fa'
 import './ContactPage.css'
+
+const EMAILJS_SERVICE  = 'service_iqu4cqb'
+const EMAILJS_TEMPLATE = 'template_2n0970l'
+const EMAILJS_KEY      = 'roUdnqBYBa0YGf_En'
 
 const infos = [
   {
@@ -31,14 +35,37 @@ const infos = [
 export default function ContactPage() {
   const [form, setForm] = useState({ nom: '', email: '', telephone: '', sujet: '', message: '' })
   const [sent, setSent] = useState(false)
+  const [sending, setSending] = useState(false)
+  const [error, setError] = useState('')
 
   function handleChange(e) {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault()
-    setSent(true)
+    setSending(true)
+    setError('')
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE,
+        EMAILJS_TEMPLATE,
+        {
+          nom: form.nom,
+          societe: '—',
+          email: form.email,
+          telephone: form.telephone || '—',
+          articles: `Sujet : ${form.sujet}`,
+          message: form.message,
+        },
+        EMAILJS_KEY
+      )
+      setSent(true)
+    } catch {
+      setError('Une erreur est survenue. Veuillez réessayer ou nous appeler directement.')
+    } finally {
+      setSending(false)
+    }
   }
 
   return (
@@ -118,7 +145,10 @@ export default function ContactPage() {
                     <label>Message *</label>
                     <textarea name="message" value={form.message} onChange={handleChange} placeholder="Décrivez votre besoin..." rows={5} required />
                   </div>
-                  <button type="submit" className="contact-submit">Envoyer le message</button>
+                  <button type="submit" className="contact-submit" disabled={sending}>
+                    {sending ? 'Envoi en cours...' : 'Envoyer le message'}
+                  </button>
+                  {error && <p className="contact-error">{error}</p>}
                 </form>
               )}
             </div>
