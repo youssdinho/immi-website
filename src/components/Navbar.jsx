@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import SearchBar from './SearchBar'
 import './Navbar.css'
 
 export default function Navbar() {
@@ -20,6 +21,8 @@ export default function Navbar() {
           <li><Link to="/a-propos" onClick={() => setMenuOpen(false)}>À propos</Link></li>
           <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
         </ul>
+
+        <SearchBar />
 
         <Link to="/devis" className="btn-devis" onClick={() => setMenuOpen(false)}>
           Demander un Devis

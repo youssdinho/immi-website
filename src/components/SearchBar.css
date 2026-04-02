@@ -1,0 +1,131 @@
+.searchbar-wrapper {
+  position: relative;
+  flex: 1;
+  max-width: 380px;
+}
+
+.searchbar-form {
+  display: flex;
+  align-items: center;
+  background: #2a2a2a;
+  border: 1px solid #3a3a3a;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.searchbar-form:focus-within {
+  border-color: var(--accent);
+}
+
+.searchbar-input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--white);
+  font-size: 14px;
+  font-family: var(--font-body);
+  padding: 9px 14px;
+}
+
+.searchbar-input::placeholder {
+  color: #666;
+}
+
+.searchbar-btn {
+  background: var(--accent);
+  border: none;
+  color: #fff;
+  padding: 9px 14px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s;
+}
+.searchbar-btn:hover {
+  background: var(--accent-hover);
+}
+
+/* Dropdown results */
+.searchbar-results {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  list-style: none;
+  z-index: 2000;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+
+.searchbar-results li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: background 0.15s;
+  border-bottom: 1px solid #2a2a2a;
+}
+.searchbar-results li:last-child { border-bottom: none; }
+.searchbar-results li:hover { background: #2a2a2a; }
+
+.searchbar-results li img {
+  width: 46px;
+  height: 46px;
+  object-fit: cover;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.sr-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 2px;
+}
+
+.sr-cat {
+  font-size: 11px;
+  color: var(--accent);
+}
+
+.sr-empty {
+  padding: 14px;
+  color: var(--gray);
+  font-size: 13px;
+  text-align: center;
+  cursor: default;
+}
+
+/* Mobile — caché dans la navbar */
+@media (max-width: 768px) {
+  .searchbar-wrapper {
+    display: none;
+  }
+}
+
+/* Barre mobile standalone (hors navbar) */
+.mobile-search-strip {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-search-strip {
+    display: block;
+    margin-top: 72px;
+    padding: 8px 14px;
+    background: #111;
+    border-bottom: 1px solid #2a2a2a;
+  }
+
+  .mobile-search-strip .searchbar-wrapper {
+    display: block;
+    max-width: 100%;
+  }
+}

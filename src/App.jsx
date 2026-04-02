@@ -23,6 +23,7 @@ import NotFoundPage from './components/NotFoundPage'
 import WhatsAppButton from './components/WhatsAppButton'
 import VideoSection from './components/VideoSection'
 import SEO from './components/SEO'
+import { MobileSearchStrip } from './components/SearchBar'
 
 function HomePage() {
   return (
@@ -48,6 +49,7 @@ function App() {
     <BrowserRouter>
       <ScrollToTop />
       <WhatsAppButton />
+      <MobileSearchStrip />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/produits" element={<ProduitsPage />} />

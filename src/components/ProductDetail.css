@@ -147,6 +147,26 @@
   background: #c1121f;
 }
 
+.pd-btn-whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #25d366;
+  color: #fff;
+  padding: 13px 24px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  margin-bottom: 16px;
+  transition: background 0.2s, transform 0.2s;
+}
+.pd-btn-whatsapp:hover {
+  background: #1ebe5a;
+  transform: translateY(-2px);
+}
+
 .pd-back {
   display: block;
   text-align: center;
