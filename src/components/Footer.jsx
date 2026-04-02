@@ -33,7 +33,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>© 2025 IMMI Négoce. Tous droits réservés.</p>
+          <p>© 2026 IMMI Négoce. Tous droits réservés.</p>
           <div className="footer-socials">
             <a href="https://www.facebook.com/p/Immi-Negoce-61575701594035/" target="_blank" rel="noreferrer" aria-label="Facebook"><FaFacebook /></a>
             <a href="https://www.instagram.com/immi_negoce/" target="_blank" rel="noreferrer" aria-label="Instagram"><FaInstagram /></a>
