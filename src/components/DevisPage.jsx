@@ -2,6 +2,7 @@ import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import SEO from './SEO'
 import { FaCheckCircle, FaPlus, FaTrash } from 'react-icons/fa'
 import { catalog } from '../data/products'
 import './DevisPage.css'
@@ -93,6 +94,11 @@ export default function DevisPage() {
 
   return (
     <>
+      <SEO
+        title="Demander un Devis"
+        description="Demandez un devis gratuit pour vos coffrets électriques, goulottes et plinthes. Réponse sous 24h. Sans engagement."
+        url="https://immi-negoce.ma/devis"
+      />
       <Navbar />
       <div className="devis-wrapper">
 

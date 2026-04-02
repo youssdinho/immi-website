@@ -22,10 +22,15 @@ import DevisPage from './components/DevisPage'
 import NotFoundPage from './components/NotFoundPage'
 import WhatsAppButton from './components/WhatsAppButton'
 import VideoSection from './components/VideoSection'
+import SEO from './components/SEO'
 
 function HomePage() {
   return (
     <>
+      <SEO
+        description="IMMI Négoce — Fournisseur de coffrets électriques ABS, goulottes et plinthes pour professionnels au Maroc. Basé à Temara. Devis gratuit."
+        url="https://immi-negoce.ma"
+      />
       <Navbar />
       <Hero />
       <Features />

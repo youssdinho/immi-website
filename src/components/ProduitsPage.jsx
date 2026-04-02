@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import SEO from './SEO'
 import './ProduitsPage.css'
 
 const categories = [
@@ -13,6 +14,11 @@ const categories = [
 export default function ProduitsPage() {
   return (
     <>
+      <SEO
+        title="Nos Produits"
+        description="Découvrez nos coffrets électriques ABS opaques et transparents, goulottes et plinthes. Produits conformes aux normes internationales. Livraison au Maroc."
+        url="https://immi-negoce.ma/produits"
+      />
       <Navbar />
       <div className="produits-page-wrapper">
         <div className="produits-page">

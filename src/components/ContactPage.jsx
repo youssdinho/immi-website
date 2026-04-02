@@ -2,6 +2,7 @@ import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import SEO from './SEO'
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from 'react-icons/fa'
 import './ContactPage.css'
 
@@ -70,6 +71,11 @@ export default function ContactPage() {
 
   return (
     <>
+      <SEO
+        title="Contact"
+        description="Contactez IMMI Négoce à Temara. Téléphone : 06 61 69 55 51. Email : immi.negoce@gmail.com. Ouvert Lun-Ven 9h-19h, Sam 9h-17h."
+        url="https://immi-negoce.ma/contact"
+      />
       <Navbar />
       <div className="contact-wrapper">
 

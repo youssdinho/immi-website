@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import SEO from './SEO'
 import { FaIndustry, FaShieldAlt, FaHandshake, FaLeaf } from 'react-icons/fa'
 import './AProposPage.css'
 
@@ -30,6 +31,11 @@ const valeurs = [
 export default function AProposPage() {
   return (
     <>
+      <SEO
+        title="À Propos"
+        description="IMMI Négoce, société marocaine spécialisée en électricité industrielle depuis 2024. Basée à Temara, nous fournissons des produits de qualité aux professionnels."
+        url="https://immi-negoce.ma/a-propos"
+      />
       <Navbar />
       <div className="apropos-wrapper">
 
