@@ -118,7 +118,7 @@ export default function AProposPage() {
               {[
                 { name: 'Coffret ABS Opaque', image: '/images/coffret-opaque.jpg', slug: 'coffret-abs-opaque' },
                 { name: 'Coffret ABS Transparent', image: '/images/coffret-transparent.jpg', slug: 'coffret-abs-transparent' },
-                { name: 'Plinth', image: '/images/plinth.jpg', slug: 'plinth' },
+                { name: 'Plinthe', image: '/images/plinth.jpg', slug: 'plinth' },
                 { name: 'Goulotte', image: '/images/goulotte.jpg', slug: 'goulotte' },
               ].map((cat) => (
                 <Link to={`/produits/${cat.slug}`} key={cat.slug} className="apropos-cat-card">

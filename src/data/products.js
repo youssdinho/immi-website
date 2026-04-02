@@ -76,7 +76,7 @@ export const catalog = {
     ].map(coffret),
   },
   'plinth': {
-    categoryName: 'Plinth',
+    categoryName: 'Plinthe',
     items: [
       '20x10 Autocollant',
       '25x16 Autocollant',
@@ -85,10 +85,10 @@ export const catalog = {
       '60x40 Autocollant',
     ].map((dims) => ({
       id: `plinth-${dims.replace(/\s+/g, '-').toLowerCase()}`,
-      name: `Plinth ${dims}`,
+      name: `Plinthe ${dims}`,
       dimensions: dims,
       description:
-        'Plinth en PVC avec bande autocollante pour une fixation rapide et sans perçage. Idéal pour le passage de câbles en apparent. Résistant et facile à installer.',
+        'Plinthe en PVC avec bande autocollante pour une fixation rapide et sans perçage. Idéal pour le passage de câbles en apparent. Résistant et facile à installer.',
       thumbnail: '/images/plinth/img1.jpg',
       images: ['/images/plinth/img1.jpg'],
       specs: [
@@ -101,10 +101,10 @@ export const catalog = {
       ],
     })).concat(['80x40', '100x40'].map((dims) => ({
       id: `plinth-${dims}`,
-      name: `Plinth ${dims}`,
+      name: `Plinthe ${dims}`,
       dimensions: dims,
       description:
-        'Plinth en PVC fixation par vis. Grande capacité de câblage, idéal pour les installations nécessitant un passage de câbles important. Résistant et facile à installer.',
+        'Plinthe en PVC fixation par vis. Grande capacité de câblage, idéal pour les installations nécessitant un passage de câbles important. Résistant et facile à installer.',
       thumbnail: '/images/plinth/img2.jpg',
       images: [
         '/images/plinth/img2.jpg',
