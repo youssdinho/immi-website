@@ -14,7 +14,7 @@ const EMAILJS_KEY      = 'roUdnqBYBa0YGf_En'
 const categoryOptions = [
   { label: 'Coffret ABS Opaque', key: 'coffret-abs-opaque' },
   { label: 'Coffret ABS Transparent', key: 'coffret-abs-transparent' },
-  { label: 'Plinthe', key: 'plinth' },
+  { label: 'Plinthe', key: 'plinthe' },
   { label: 'Goulotte', key: 'goulotte' },
   { label: 'Autre', key: null },
 ]

@@ -5,7 +5,7 @@ const mobileSlides = [
   { image: '/images/hero-bg.jpg',             label: 'IMMI Négoce' },
   { image: '/images/coffret-opaque.jpg',      label: 'Coffrets ABS Opaque' },
   { image: '/images/coffret-transparent.jpg', label: 'Coffrets ABS Transparent' },
-  { image: '/images/plinth.jpg',              label: 'Plinthes' },
+  { image: '/images/plinthe.jpg',              label: 'Plinthes' },
   { image: '/images/goulotte.jpg',            label: 'Goulottes' },
 ]
 

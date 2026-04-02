@@ -7,7 +7,7 @@ import './ProduitsPage.css'
 const categories = [
   { name: 'Coffret ABS Opaque', image: '/images/coffret-opaque.jpg', slug: 'coffret-abs-opaque' },
   { name: 'Coffret ABS Transparent', image: '/images/coffret-transparent.jpg', slug: 'coffret-abs-transparent' },
-  { name: 'Plinthe', image: '/images/plinth.jpg', slug: 'plinth' },
+  { name: 'Plinthe', image: '/images/plinth.jpg', slug: 'plinthe' },
   { name: 'Goulotte', image: '/images/goulotte.jpg', slug: 'goulotte' },
 ]
 
