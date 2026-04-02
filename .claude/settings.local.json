@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm list:*)",
+      "Bash(npm install:*)",
+      "Bash(ls:*)",
+      "Bash(python3:*)",
+      "Bash(cp \"/c/Users/DELL/Dropbox/Turquie/Photo Coffret/TRANSPARENT.jpg\" /c/Users/DELL/immi-website/public/images/coffret-abs-transparent/img1.jpg)",
+      "Bash(cp \"/c/Users/DELL/Dropbox/Turquie/Photo Coffret/PLATINE.jpg\" /c/Users/DELL/immi-website/public/images/coffret-abs-transparent/img2.jpg)",
+      "Bash(cp \"/c/Users/DELL/Dropbox/Turquie/Photo Coffret/image \\(25\\).jpg\" /c/Users/DELL/immi-website/public/images/coffret-abs-transparent/img3.jpg)",
+      "Bash(cp \"/c/Users/DELL/.claude/image-cache/d67e31b7-f2a0-4979-a90d-6ad0a3f85243/7.jpeg\" /c/Users/DELL/immi-website/public/images/goulotte/img1.jpg)",
+      "Bash(cp \"/c/Users/DELL/.claude/image-cache/d67e31b7-f2a0-4979-a90d-6ad0a3f85243/8.jpeg\" /c/Users/DELL/immi-website/public/images/goulotte/img2.jpg)",
+      "Bash(cp \"/c/Users/DELL/.claude/image-cache/d67e31b7-f2a0-4979-a90d-6ad0a3f85243/9.jpeg\" /c/Users/DELL/immi-website/public/images/goulotte/img3.jpg)",
+      "Bash(npm run:*)",
+      "Bash(find \"C:/Users/DELL/immi-website/public/images\" -type f -name \"*.jpg\" -exec ls -lh {} \\\\;)",
+      "Bash(node optimize-images.mjs)"
+    ]
+  }
+}

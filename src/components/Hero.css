@@ -1,0 +1,97 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-image: url('/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(105deg,
+      rgba(0, 0, 0, 0.92) 0%,
+      rgba(5, 5, 5, 0.82) 50%,
+      rgba(15, 8, 0, 0.65) 100%
+    );
+}
+
+.hero-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 140px;
+  background: linear-gradient(to bottom, transparent, var(--bg-dark));
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 160px 24px 100px;
+  width: 100%;
+}
+
+.hero-eyebrow {
+  font-family: var(--font-title);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-family: var(--font-title);
+  font-size: clamp(48px, 8vw, 88px);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 40px;
+  text-shadow: 0 2px 30px rgba(0,0,0,0.9);
+}
+
+.hero-title span {
+  color: var(--accent);
+  text-shadow: 0 0 40px rgba(232, 119, 34, 0.4);
+}
+
+.hero-btn {
+  display: inline-block;
+  background-color: var(--accent);
+  color: var(--white);
+  font-family: var(--font-title);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 16px 44px;
+  border-radius: 2px;
+  box-shadow: 0 4px 20px rgba(232, 119, 34, 0.35);
+  transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.hero-btn:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(232, 119, 34, 0.5);
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 130px 24px 80px;
+    text-align: center;
+  }
+}

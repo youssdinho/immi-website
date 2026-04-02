@@ -1,0 +1,99 @@
+.whyus {
+  position: relative;
+  padding: 80px 0;
+  overflow: hidden;
+  background-image: url('/images/factory-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.whyus::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.82);
+}
+
+.whyus-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.whyus .section-title {
+  font-family: var(--font-title);
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.whyus .section-divider {
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent);
+  margin: 16px auto 48px;
+}
+
+.whyus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.whyus-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-left: 1px solid rgba(255,255,255,0.08);
+}
+
+.whyus-card:first-child {
+  border-left: none;
+}
+
+.whyus-icon {
+  font-size: 52px;
+  color: var(--accent);
+  filter: drop-shadow(0 0 16px rgba(232, 119, 34, 0.6));
+}
+
+.whyus-title {
+  font-family: var(--font-title);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.whyus-desc {
+  font-size: 14px;
+  color: #bbbbbb;
+  max-width: 260px;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .whyus-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .whyus-card {
+    border-left: none;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding-top: 32px;
+  }
+
+  .whyus-card:first-child {
+    border-top: none;
+  }
+}
