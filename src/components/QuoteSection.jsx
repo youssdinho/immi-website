@@ -1,4 +1,5 @@
 import { FaPhone, FaMapMarkerAlt } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 import './QuoteSection.css'
 
 export default function QuoteSection() {
@@ -18,7 +19,7 @@ export default function QuoteSection() {
               </div>
             </div>
 
-            <a href="#devis-form" className="btn-quote">Demander un Devis</a>
+            <Link to="/devis" className="btn-quote">Demander un Devis</Link>
 
             <div className="quote-info-item">
               <FaMapMarkerAlt className="quote-icon" />

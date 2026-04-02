@@ -1,4 +1,6 @@
-import { FaFacebook, FaInstagram, FaTwitter, FaEnvelope } from 'react-icons/fa'
+import { FaFacebook, FaInstagram, FaEnvelope } from 'react-icons/fa'
+import { FaXTwitter } from 'react-icons/fa6'
+import { Link } from 'react-router-dom'
 import './Footer.css'
 
 export default function Footer() {
@@ -15,10 +17,10 @@ export default function Footer() {
           <div className="footer-links">
             <h4>Navigation</h4>
             <ul>
-              <li><a href="#accueil">Accueil</a></li>
-              <li><a href="#produits">Produits</a></li>
-              <li><a href="#pourquoi-nous">À propos</a></li>
-              <li><a href="#devis">Devis</a></li>
+              <li><Link to="/produits">Produits</Link></li>
+              <li><Link to="/a-propos">À propos</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
+              <li><Link to="/devis">Devis</Link></li>
             </ul>
           </div>
 
@@ -35,7 +37,7 @@ export default function Footer() {
           <div className="footer-socials">
             <a href="https://www.facebook.com/p/Immi-Negoce-61575701594035/" target="_blank" rel="noreferrer" aria-label="Facebook"><FaFacebook /></a>
             <a href="https://www.instagram.com/immi_negoce/" target="_blank" rel="noreferrer" aria-label="Instagram"><FaInstagram /></a>
-            <a href="https://x.com/IMMINEGOCE" target="_blank" rel="noreferrer" aria-label="X"><FaTwitter /></a>
+            <a href="https://x.com/IMMINEGOCE" target="_blank" rel="noreferrer" aria-label="X"><FaXTwitter /></a>
             <a href="mailto:immi.negoce@gmail.com" aria-label="Email"><FaEnvelope /></a>
           </div>
         </div>

@@ -37,9 +37,9 @@ export default function Categories() {
           })}
         </div>
 
-        <a href="#produits" className="btn-all-products">
+        <Link to="/produits" className="btn-all-products">
           Voir tous les produits
-        </a>
+        </Link>
       </div>
     </section>
   )
