@@ -1,9 +1,36 @@
-import { useState } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { catalog } from '../data/products'
 import './ProductDetail.css'
+
+function Lightbox({ images, index, onClose, onPrev, onNext }) {
+  useEffect(() => {
+    function handleKey(e) {
+      if (e.key === 'Escape') onClose()
+      if (e.key === 'ArrowLeft') onPrev()
+      if (e.key === 'ArrowRight') onNext()
+    }
+    window.addEventListener('keydown', handleKey)
+    return () => window.removeEventListener('keydown', handleKey)
+  }, [onClose, onPrev, onNext])
+
+  return (
+    <div className="lightbox-overlay" onClick={onClose}>
+      <button className="lightbox-close" onClick={onClose}>✕</button>
+      <button className="lightbox-prev" onClick={(e) => { e.stopPropagation(); onPrev() }}>‹</button>
+      <img
+        className="lightbox-img"
+        src={images[index]}
+        alt={`photo ${index + 1}`}
+        onClick={(e) => e.stopPropagation()}
+      />
+      <button className="lightbox-next" onClick={(e) => { e.stopPropagation(); onNext() }}>›</button>
+      <div className="lightbox-counter">{index + 1} / {images.length}</div>
+    </div>
+  )
+}
 
 export default function ProductDetail() {
   const { category, productId } = useParams()
@@ -36,6 +63,11 @@ export default function ProductDetail() {
 
 function ProductView({ product, category, categoryName }) {
   const [mainImg, setMainImg] = useState(0)
+  const [lightbox, setLightbox] = useState(false)
+
+  const closeLightbox = useCallback(() => setLightbox(false), [])
+  const prevImg = useCallback(() => setMainImg((i) => (i - 1 + product.images.length) % product.images.length), [product.images.length])
+  const nextImg = useCallback(() => setMainImg((i) => (i + 1) % product.images.length), [product.images.length])
 
   return (
     <div className="pd-page">
@@ -48,8 +80,18 @@ function ProductView({ product, category, categoryName }) {
       <div className="pd-layout">
         {/* Galerie */}
         <div className="pd-gallery">
-          <div className="pd-main-img">
+          {lightbox && (
+            <Lightbox
+              images={product.images}
+              index={mainImg}
+              onClose={closeLightbox}
+              onPrev={prevImg}
+              onNext={nextImg}
+            />
+          )}
+          <div className="pd-main-img pd-main-img--clickable" onClick={() => setLightbox(true)}>
             <img src={product.images[mainImg]} alt={product.name} />
+            <div className="pd-zoom-hint">🔍 Cliquer pour agrandir</div>
           </div>
           <div className="pd-thumbs">
             {product.images.map((img, i) => (
