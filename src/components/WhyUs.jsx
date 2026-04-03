@@ -2,7 +2,7 @@ import { FaTags, FaShieldAlt, FaTools } from 'react-icons/fa'
 import './WhyUs.css'
 
 const reasons = [
-  { icon: <FaTags />, title: 'Prix Compétitif', desc: 'Des tarifs adaptés aux professionnels et aux entreprises industrielles.' },
+  { icon: <FaTags />, title: 'Prix Compétitifs', desc: 'Des tarifs adaptés aux professionnels et aux entreprises industrielles.' },
   { icon: <FaShieldAlt />, title: 'Qualité', desc: 'Des produits conformes aux normes internationales les plus exigeantes.' },
   { icon: <FaTools />, title: 'Expertise Technique', desc: 'Notre équipe vous accompagne avec un conseil personnalisé.' },
 ]

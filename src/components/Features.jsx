@@ -2,7 +2,7 @@ import { FaShieldAlt, FaTags, FaHeadset } from 'react-icons/fa'
 import './Features.css'
 
 const features = [
-  { icon: <FaTags />, title: 'Prix Compétitif', desc: 'Les meilleurs tarifs pour vos équipements industriels' },
+  { icon: <FaTags />, title: 'Prix Compétitifs', desc: 'Les meilleurs tarifs pour vos équipements industriels' },
   { icon: <FaShieldAlt />, title: 'Qualité Garantie', desc: 'Des produits sélectionnés aux normes les plus strictes' },
   { icon: <FaHeadset />, title: 'Expertise Technique', desc: 'Notre équipe vous conseille pour chaque besoin' },
 ]
