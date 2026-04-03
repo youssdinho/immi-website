@@ -1,9 +1,21 @@
-import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
-import { useLayoutEffect } from 'react'
+import { BrowserRouter, Routes, Route, Navigate, useLocation, useNavigate } from 'react-router-dom'
+import { useLayoutEffect, useEffect } from 'react'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
   useLayoutEffect(() => { window.scrollTo({ top: 0, behavior: 'instant' }) }, [pathname])
+  return null
+}
+
+function LegacyWordPressRedirect() {
+  const location = useLocation()
+  const navigate = useNavigate()
+  useEffect(() => {
+    const params = new URLSearchParams(location.search)
+    if (params.has('page_id') || params.has('product_cat') || params.has('product') || params.has('p')) {
+      navigate('/produits', { replace: true })
+    }
+  }, [location.search])
   return null
 }
 import Navbar from './components/Navbar'
@@ -48,6 +60,7 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <LegacyWordPressRedirect />
       <WhatsAppButton />
       <MobileSearchStrip />
       <Routes>
