@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import { useLayoutEffect } from 'react'
 
 function ScrollToTop() {
@@ -56,6 +56,7 @@ function App() {
         <Route path="/a-propos" element={<AProposPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/devis" element={<DevisPage />} />
+        <Route path="/produits/plinth" element={<Navigate to="/produits/plinthe" replace />} />
         <Route path="/produits/:category" element={<CategoryPage />} />
         <Route path="/produits/:category/:productId" element={<ProductDetail />} />
         <Route path="*" element={<NotFoundPage />} />
