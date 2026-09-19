@@ -119,7 +119,11 @@ export const catalog = {
         { label: 'Fixation', value: 'Par vis' },
         { label: 'Longueur', value: '2 m' },
       ],
-    }))).concat(['50x13', '70x20'].map((dims) => ({
+    }))),
+  },
+  'plinthe-au-sol': {
+    categoryName: 'Plinthe au sol',
+    items: ['50x13', '70x20'].map((dims) => ({
       id: `plinthe-au-sol-${dims}`,
       name: `Plinthe au sol ${dims}`,
       dimensions: dims,
@@ -136,7 +140,7 @@ export const catalog = {
         { label: 'Fixation', value: 'Adhésif' },
         { label: 'Longueur', value: '2 m' },
       ],
-    }))),
+    })),
   },
   'goulotte': {
     categoryName: 'Goulotte',

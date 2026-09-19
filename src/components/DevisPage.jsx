@@ -15,6 +15,7 @@ const categoryOptions = [
   { label: 'Coffret ABS Opaque', key: 'coffret-abs-opaque' },
   { label: 'Coffret ABS Transparent', key: 'coffret-abs-transparent' },
   { label: 'Plinthe', key: 'plinthe' },
+  { label: 'Plinthe au sol', key: 'plinthe-au-sol' },
   { label: 'Goulotte', key: 'goulotte' },
   { label: 'Autre', key: null },
 ]

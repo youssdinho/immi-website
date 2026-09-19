@@ -37,6 +37,25 @@ export const categoryContent = {
       'Comme pour un coffret opaque, prévoyez de la place pour le câblage et les évolutions futures. Si la lecture d’un appareil n’est pas nécessaire, le coffret opaque est une alternative équivalente en protection.',
   },
 
+  'plinthe-au-sol': {
+    seoTitle: 'Plinthes au sol PVC pour passage de câbles au sol',
+    metaDescription:
+      'Plinthes au sol en PVC gris adhésif, 50x13 et 70x20 mm, en 2 m : passage de câbles au sol sans perçage dans les bureaux et commerces. Vente en gros à Témara, livraison au Maroc.',
+    intro: [
+      'La plinthe au sol (aussi appelée passe-câble de sol) protège les câbles qui doivent traverser une pièce : alimentation d’un bureau au milieu d’un open space, d’une caisse, d’un écran ou d’une machine éloignée du mur.',
+      'Son profil bombé limite les risques de trébucher et protège les câbles de l’écrasement, et ses compartiments séparent les différents câbles (courant fort, réseau, téléphone). Elle se pose directement au sol grâce à sa bande adhésive, sans perçage.',
+      'Nos plinthes au sol sont en PVC gris, en longueurs de 2 m, disponibles en 50x13 et 70x20 mm.',
+    ],
+    usages: [
+      'Alimentation de postes de travail au milieu d’un open space',
+      'Salles de réunion, accueils et caisses de commerces',
+      'Passage provisoire de câbles lors d’événements ou de travaux',
+      'Protection de câbles au sol dans les ateliers et locaux techniques',
+    ],
+    choisir:
+      'La 50x13 convient à quelques câbles fins (alimentation, réseau) avec un profil très discret. La 70x20 offre plus de place pour des câbles plus nombreux ou plus gros.',
+  },
+
   goulotte: {
     seoTitle: 'Goulottes de câblage PVC pour armoires électriques',
     metaDescription:
@@ -55,22 +74,20 @@ export const categoryContent = {
   },
 
   plinthe: {
-    seoTitle: 'Plinthes, moulures et plinthes au sol PVC pour passage de câbles',
+    seoTitle: 'Plinthes et moulures PVC pour passage de câbles',
     metaDescription:
-      'Plinthes et moulures électriques en PVC : autocollantes (20x10 à 60x40), à visser (80x40, 100x40) et plinthes au sol (50x13, 70x20). Vente en gros à Témara, livraison partout au Maroc.',
+      'Plinthes et moulures électriques en PVC blanc, autocollantes (20x10 à 60x40) ou à visser (80x40, 100x40), en 2 m. Vente en gros à Témara, livraison partout au Maroc.',
     intro: [
       'Les plinthes et moulures électriques permettent de faire passer des câbles en apparent de façon propre et discrète, sans saigner les murs. Elles sont idéales en rénovation, dans les bureaux, les commerces et les logements.',
       'Les petites sections (20x10 à 60x40) sont autocollantes pour une pose rapide sans perçage. Les grandes sections (80x40 et 100x40) se fixent par vis et offrent une grande capacité de câblage. Toutes sont en PVC blanc, en longueurs de 2 m.',
-      'Pour traverser une pièce, la plinthe au sol (50x13 ou 70x20, en PVC gris adhésif, longueur 2 m) protège les câbles posés par terre : son profil bombé limite les risques de trébucher, et ses compartiments séparent les différents câbles.',
     ],
     usages: [
       'Passage de câbles électriques en apparent',
       'Câblage réseau et téléphonique dans les bureaux',
       'Rénovation sans travaux de maçonnerie',
-      'Passage de câbles au sol dans les bureaux, open spaces et salles de réunion',
     ],
     choisir:
-      'Pour un ou deux câbles, une moulure 20x10 ou 25x16 suffit. Pour plusieurs circuits ou des câbles plus gros, passez aux sections 40x40 à 100x40. Pour alimenter un poste au milieu d’une pièce, choisissez la plinthe au sol.',
+      'Pour un ou deux câbles, une moulure 20x10 ou 25x16 suffit. Pour plusieurs circuits ou des câbles plus gros, passez aux sections 40x40 à 100x40. Pour faire passer des câbles au sol, voyez notre catégorie plinthe au sol.',
   },
 }
 

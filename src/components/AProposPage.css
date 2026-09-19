@@ -202,8 +202,14 @@
 
 .apropos-categories-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 16px;
+}
+
+@media (max-width: 1100px) {
+  .apropos-categories-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .apropos-cat-card {

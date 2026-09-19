@@ -70,6 +70,8 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/devis" element={<DevisPage />} />
         <Route path="/produits/plinth" element={<Navigate to="/produits/plinthe" replace />} />
+        <Route path="/produits/plinthe/plinthe-au-sol-50x13" element={<Navigate to="/produits/plinthe-au-sol/plinthe-au-sol-50x13" replace />} />
+        <Route path="/produits/plinthe/plinthe-au-sol-70x20" element={<Navigate to="/produits/plinthe-au-sol/plinthe-au-sol-70x20" replace />} />
         <Route path="/produits/:category" element={<CategoryPage />} />
         <Route path="/produits/:category/:productId" element={<ProductDetail />} />
         <Route path="*" element={<NotFoundPage />} />

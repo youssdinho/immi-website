@@ -106,12 +106,17 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://immi-negoce.ma/produits/plinthe/plinthe-au-sol-50x13</loc>
+    <loc>https://immi-negoce.ma/produits/plinthe-au-sol</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/plinthe-au-sol/plinthe-au-sol-50x13</loc>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://immi-negoce.ma/produits/plinthe/plinthe-au-sol-70x20</loc>
+    <loc>https://immi-negoce.ma/produits/plinthe-au-sol/plinthe-au-sol-70x20</loc>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
