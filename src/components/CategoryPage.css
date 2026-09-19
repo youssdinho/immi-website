@@ -125,3 +125,67 @@
     gap: 16px;
   }
 }
+
+/* Texte descriptif sous la grille produits */
+.cat-content {
+  margin-top: 56px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 36px 40px;
+  max-width: 900px;
+  color: #444;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.cat-content h2 {
+  font-size: 22px;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+}
+
+.cat-content h3 {
+  font-size: 17px;
+  color: #1a1a2e;
+  margin: 26px 0 10px;
+}
+
+.cat-content p {
+  margin-bottom: 12px;
+}
+
+.cat-content ul {
+  padding-left: 20px;
+  margin-bottom: 8px;
+}
+
+.cat-content li {
+  margin-bottom: 6px;
+}
+
+.cat-content-dims {
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.cat-content-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #e63946;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.cat-content-btn:hover {
+  background: #c1121f;
+}
+
+@media (max-width: 600px) {
+  .cat-content {
+    padding: 24px 18px;
+  }
+}

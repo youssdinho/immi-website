@@ -119,6 +119,23 @@ export const catalog = {
         { label: 'Fixation', value: 'Par vis' },
         { label: 'Longueur', value: '2 m' },
       ],
+    }))).concat(['50x13', '70x20'].map((dims) => ({
+      id: `plinthe-au-sol-${dims}`,
+      name: `Plinthe au sol ${dims}`,
+      dimensions: dims,
+      description:
+        'Plinthe de sol en PVC gris à profil bombé et compartiments séparés, avec bande adhésive pour une pose rapide sans perçage. Permet de faire passer des câbles au sol en toute sécurité dans les zones de passage : bureaux, open spaces, salles de réunion, commerces.',
+      thumbnail: '/images/plinthe/plinthe-sol.webp',
+      images: ['/images/plinthe/plinthe-sol.webp'],
+      specs: [
+        { label: 'Marque', value: 'IMMI' },
+        { label: 'Dimensions', value: dims + ' mm' },
+        { label: 'Couleur', value: 'Gris' },
+        { label: 'Matière', value: 'PVC' },
+        { label: 'Pose', value: 'Au sol' },
+        { label: 'Fixation', value: 'Adhésif' },
+        { label: 'Longueur', value: '2 m' },
+      ],
     }))),
   },
   'goulotte': {

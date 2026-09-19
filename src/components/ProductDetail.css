@@ -294,3 +294,35 @@
   opacity: 1;
 }
 
+
+/* Liens vers les autres dimensions de la même catégorie */
+.pd-siblings {
+  margin-top: 28px;
+}
+
+.pd-siblings h3 {
+  font-size: 15px;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+}
+
+.pd-siblings-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pd-siblings-list a {
+  font-size: 13px;
+  color: #1a1a2e;
+  background: #f4f4f4;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 6px 10px;
+  text-decoration: none;
+}
+
+.pd-siblings-list a:hover {
+  border-color: #e63946;
+  color: #e63946;
+}

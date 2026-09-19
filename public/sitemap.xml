@@ -16,8 +16,53 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://immi-negoce.ma/produits/coffret-abs-transparent</loc>
-    <priority>0.8</priority>
+    <loc>https://immi-negoce.ma/produits/coffret-abs-opaque/coffret-abs-opaque-300x200x130</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/coffret-abs-opaque/coffret-abs-opaque-350x250x150</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/coffret-abs-opaque/coffret-abs-opaque-400x300x170</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/coffret-abs-opaque/coffret-abs-opaque-400x300x220</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/coffret-abs-opaque/coffret-abs-opaque-500x400x180</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/coffret-abs-opaque/coffret-abs-opaque-500x400x240</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/coffret-abs-opaque/coffret-abs-opaque-500x350x190</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/coffret-abs-opaque/coffret-abs-opaque-600x500x220</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/coffret-abs-opaque/coffret-abs-opaque-700x500x250</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/coffret-abs-opaque/coffret-abs-opaque-800x600x260</loc>
+    <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -26,8 +71,133 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://immi-negoce.ma/produits/plinthe/plinthe-20x10-autocollant</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/plinthe/plinthe-25x16-autocollant</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/plinthe/plinthe-40x16-autocollant</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/plinthe/plinthe-40x40-autocollant</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/plinthe/plinthe-60x40-autocollant</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/plinthe/plinthe-80x40</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/plinthe/plinthe-100x40</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/plinthe/plinthe-au-sol-50x13</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/plinthe/plinthe-au-sol-70x20</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://immi-negoce.ma/produits/goulotte</loc>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/goulotte/goulotte-25x25</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/goulotte/goulotte-25x40</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/goulotte/goulotte-40x40</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/goulotte/goulotte-40x60</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/goulotte/goulotte-60x40</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/goulotte/goulotte-60x60</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/goulotte/goulotte-80x60</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/goulotte/goulotte-80x80</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/goulotte/goulotte-40x40-autocollant</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/goulotte/goulotte-40x60-autocollant</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/coffret-abs-transparent</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/coffret-abs-transparent/coffret-abs-transparent-300x200x130</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/coffret-abs-transparent/coffret-abs-transparent-250x350x150</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/coffret-abs-transparent/coffret-abs-transparent-400x300x170</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/coffret-abs-transparent/coffret-abs-transparent-500x400x240</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://immi-negoce.ma/produits/coffret-abs-transparent/coffret-abs-transparent-700x500x250</loc>
+    <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -42,7 +212,7 @@
   </url>
   <url>
     <loc>https://immi-negoce.ma/devis</loc>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
     <changefreq>yearly</changefreq>
   </url>
 </urlset>
