@@ -25,7 +25,7 @@ export default function QuoteSection() {
               <FaMapMarkerAlt className="quote-icon" />
               <div>
                 <p className="quote-info-label">Visitez-nous</p>
-                <p className="quote-info-value">Avenue Mohamed 5, Temara</p>
+                <p className="quote-info-value">Avenue Al Qods, Témara</p>
               </div>
             </div>
           </div>

@@ -14,7 +14,7 @@ const infos = [
   {
     icon: <FaMapMarkerAlt />,
     titre: 'Adresse',
-    lignes: ['Avenue Mohamed V, Temara', 'Maroc'],
+    lignes: ['Avenue Al Qods, Témara 12000', 'Maroc'],
   },
   {
     icon: <FaPhone />,
@@ -29,7 +29,7 @@ const infos = [
   {
     icon: <FaClock />,
     titre: 'Horaires',
-    lignes: ['Lun – Ven : 9h00 – 19h00', 'Samedi : 9h00 – 17h00'],
+    lignes: ['Lun – Ven : 9h00 – 19h00', 'Samedi : 9h00 – 19h00'],
   },
 ]
 
@@ -73,7 +73,7 @@ export default function ContactPage() {
     <>
       <SEO
         title="Contact"
-        description="Contactez IMMI Négoce à Temara. Téléphone : 06 61 69 55 51. Email : immi.negoce@gmail.com. Ouvert Lun-Ven 9h-19h, Sam 9h-17h."
+        description="Contactez IMMI Négoce à Temara. Téléphone : 06 61 69 55 51. Email : immi.negoce@gmail.com. Ouvert Lun-Ven 9h-19h, Sam 9h-19h."
         url="https://immi-negoce.ma/contact"
       />
       <Navbar />

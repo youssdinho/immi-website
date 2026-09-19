@@ -27,7 +27,7 @@ export default function Footer() {
           <div className="footer-contact">
             <h4>Contact</h4>
             <p>📞 0661 695 551</p>
-            <p>📍 Avenue Mohamed 5, Temara</p>
+            <p>📍 Avenue Al Qods, Témara</p>
             <p>✉️ immi.negoce@gmail.com</p>
           </div>
         </div>

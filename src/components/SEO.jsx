@@ -1,6 +1,13 @@
+import { useEffect } from 'react'
 import { Helmet } from 'react-helmet-async'
 
 export default function SEO({ title, description, url = 'https://immi-negoce.ma' }) {
+  // La description par défaut d'index.html sert aux robots sans JavaScript ;
+  // on la retire dès qu'une page fournit la sienne, pour éviter un doublon.
+  useEffect(() => {
+    if (description) document.querySelector('meta[name="description"][data-default]')?.remove()
+  }, [description])
+
   const fullTitle = title ? `${title} | IMMI Négoce` : 'IMMI Négoce — Électricité Industrielle au Maroc'
 
   return (
